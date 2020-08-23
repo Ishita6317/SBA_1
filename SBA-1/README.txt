@@ -1,0 +1,1 @@
+Near Me:Objective: Search for places near me. Description: * Provide list and details of places.* Feedback and questions can be submitted regarding suggested places.* Users can sign up/sign.* Provides local news updates.* Users can share on social media.

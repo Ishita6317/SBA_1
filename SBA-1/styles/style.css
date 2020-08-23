@@ -1,0 +1,257 @@
+@font-face {
+  font-family: ubuntu;
+  src: url("Ubuntu_Condensed/UbuntuCondensed-Regular.ttf");
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: "ubuntu", 'Courier New', Courier, monospace;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+.menu_container {
+  display: flex;
+  padding: 20px;
+  background-color: #1c1808;
+  font-family: cursive;
+  font-weight: 300;
+  color: white;
+}
+
+.menu_item {
+  flex: 1;
+}
+
+.menu_container
+.menu_item nav ul{
+  display: flex;
+}
+
+.menu_container
+.menu_item nav ul li a{
+  color: white;
+  padding: 21px 37px;
+  border-radius: 3px;
+}
+
+.menu_container
+.menu_item nav ul li a:hover {
+  background-color: #becccf;
+  color: #1c1808;
+}
+
+.title_container {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.title_container h3 {
+  padding-top: 10px;
+  font-size: 20px;
+  flex: 7;
+}
+
+.title_container img{
+  flex: 1;
+} 
+
+.main_container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.left_container {
+  justify-content: center;
+  align-self: flex-start;
+  width: 80%;
+  height: 700px;
+}
+
+.right_container {
+  justify-content: center;
+  align-self: flex-end;
+  margin-right: 10px;
+  width: 20%;
+  height: 700px;
+}
+
+.main_content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.main_content .sub_main{
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.main_content .img {
+  width: 100%;
+}
+
+.main_content .img img{
+  width: 100%;  
+  height: 200px;
+}
+
+.main_content .main_items {
+  border: 1px solid gray;
+  width: 300px;
+  height: 250px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.main_content h4 {
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.main_content .main_items:hover{
+  box-shadow: 0px 0px 20px #becccf;
+}
+
+.main_content .main_items .img_content {
+  padding: 10px;
+}
+
+/*News*/
+.main_news {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid gray;
+}
+
+.header_news {
+  border: 1px solid gray;
+  background-color: black;
+  color: white;
+  height: 80px;
+  width: 100%;
+  text-align: center;
+}
+
+.content_news {
+  width: 100%;
+  text-align: center;
+}
+
+figure {
+  width: 100%;
+  align-self: center;
+  padding: 0px;
+  margin: auto;
+}
+
+video {
+  width: 80%;
+  height: 200px;
+}
+/*Text Scroll*/
+
+.text_scroll {
+  display: flex;
+  height: 30px;  
+  overflow: hidden;
+  position: relative;
+}
+
+.text_scroll p {
+  font-size: 16px;
+  color: black;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  -webkit-transform:translateX(100%);    
+  transform:translateX(100%);
+  -webkit-animation: text_scroll 30s linear infinite;
+  animation: text_scroll 30s linear infinite;
+}
+
+@-webkit-keyframes text_scroll {
+  0%   {
+    -webkit-transform: translateX(100%); 
+  }
+  100% {
+    -webkit-transform: translateX(-100%); 
+  }
+ }
+ @keyframes text_scroll {
+  0%   { 
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);       
+  }
+  100% { 
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%); 
+  }
+}
+
+/*Footer*/
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: left;
+}
+
+.footer h4 {
+  float: left;  
+  padding: 0 20px 0 50px;
+  font-size: 20px;
+}
+
+/*Social Media*/
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 15px;
+  height: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 5px;
+  float: left;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}

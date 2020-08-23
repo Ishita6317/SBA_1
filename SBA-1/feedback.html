@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Near Me</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <link rel="stylesheet" type="text/css" href="./styles/form.css">
+</head>
+
+<body>
+    <div class="menu_container">
+        <div class="menu_item">
+            <h3 style="padding-left: 30px;">Near Me</h3>
+        </div>
+        <div class="menu_item">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="feedback.html">Feedback</a>
+                    </li>
+                    <li>
+                        <a href="sign.html">Sign Up</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="text_scroll">
+        <p>COVID-19: It is recommended that all travelers read and follow the state-specific Travel Advisories.</p>
+    </div>
+    <form>
+        <div class="container" style="margin-top:30px;">
+            <h1>Feedback</h1>
+            <hr>
+            ​ <label for="text"><b>Name</b></label>
+            <input type="text" placeholder="Enter Name" name="name" id="name" required>
+            ​
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+            ​
+            <label for="select"><b>Select Your Option</b></label>
+            <select name="selectop" id="selectop" style="height: 40px;">
+                <option value="feedback">Feedback</option>
+                <option value="complain">Question</option>
+            </select>
+
+            <label for="email"><b>Email</b></label>
+            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="How can I help you?"></textarea>
+            <hr>
+            <button type="submit" class="btn">Submit</button>
+        </div>
+    </form>
+
+
+</body>
+
+</html>
